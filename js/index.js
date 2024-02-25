@@ -55,9 +55,23 @@
 // let total = 0;
 
 // for (let i = min; i <= max; i++) {
-//   if (i % 2 === 0) {
+//   if (!(i % 2)) {
 //     // total = total + i;
 //     total += i;
 //   }
 // }
 // console.log(total);
+
+/**
+ *? Напишіть цикл, який виводить у консоль
+ *? всі непарні числа  від max до min  за спаданням
+ */
+
+// const max = 50;
+// const min = 23;
+
+// for (let i = max; i >= min; i--) {
+//   if (i % 2) {
+//     console.log(i);
+//   }
+// }
