@@ -41,8 +41,23 @@
  70 === 01:10
  */
 
-const number = prompt(`Введіть число`);
-const hours = String(Math.floor(number / 60)).padStart(2, "0");
-const minutes = String(number % 60).padStart(2, "0");
+// const number = prompt(`Введіть число`);
+// const hours = String(Math.floor(number / 60)).padStart(2, "0");
+// const minutes = String(number % 60).padStart(2, "0");
 
-console.log(`${hours}:${minutes}`);
+// console.log(`${hours}:${minutes}`);
+
+/**
+ *? За допомогою циклу for складіть усі парні числа від min до max
+ */
+// const max = 50;
+// const min = 0;
+// let total = 0;
+
+// for (let i = min; i <= max; i++) {
+//   if (i % 2 === 0) {
+//     // total = total + i;
+//     total += i;
+//   }
+// }
+// console.log(total);
