@@ -92,18 +92,133 @@
 *? то вивести рядок "Здрастуйте!"
 *? інакше виводити рядок "Невірний пароль!"
  */
-const login = prompt("Введіть логін");
-if (login === "Адмін") {
-  const password = prompt("Введіть пороль");
-  if (password === "Я головний") {
-    alert("Добрий день!");
-  } else {
-    alert("Невірний пароль!");
-  }
-} else if (login === "" || login === null) {
-  alert("Скасовано");
-} else {
-  alert("Я вас не знаю!");
-}
+// const login = prompt("Введіть логін");
+// if (login === "Адмін") {
+//   const password = prompt("Введіть пороль");
+//   if (password === "Я головний") {
+//     alert("Добрий день!");
+//   } else {
+//     alert("Невірний пароль!");
+//   }
+// } else if (login === "" || login === null) {
+//   alert("Скасовано");
+// } else {
+//   alert("Я вас не знаю!");
+// }
 
-console.log(login);
+//~ TODO:==========================
+//Напиши функцію findSmallerNumber(numbers)
+//яка шукає найменше число в масиві.
+//Додай перевірку що функція отримує масив
+// const numbers = [12, 5, 35, 56, 3, 24, 7, 80, 12];
+
+// const numbers = [12, 5, 35, 56, 3, 24, 7, 80, 12];
+// function findSmallerNumber(numbers) {
+//   if (!Array.isArray(numbers)) {
+//     return;
+//   }
+//   let total = numbers[0];
+//   for (const num of numbers) {
+//     if (num < total) {
+//       total = num;
+//     }
+//   }
+//   return total;
+// }
+
+// console.log(findSmallerNumber(numbers));
+
+//TODO:==========================
+//Напишіть функцію logItems(array), яка приймає
+//масив та використовує цикл for, який для кожного
+//елемента масиву виводитиме повідомлення у форматі
+//<номер елемента> - <значення елемента>
+//Нумерація елементів має починатися з першого.
+
+// const arr = ["Джаз", "Блюз", "Рок-н-рол", "Реггі", "Реп"];
+// function logItems(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     console.log(`${i + 1} - ${array[i]}`);
+//   }
+// }
+
+// logItems(arr);
+
+//TODO:==============================
+// напиши функцію яка сумуватиме сусідні числа і пушити в новий масив
+
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+// function createNewArray(array) {
+//   if (!Array.isArray(array)) {
+//     return "array is not array";
+//   }
+//   let newArray = [];
+//   for (let i = 0; i < array.length; i += 2) {
+//     newArray.push(array[i] + array[i + 1]);
+//   }
+//   return newArray;
+// }
+
+// console.log(createNewArray(someArr));
+
+//TODO:==============================
+// Напишіть рішення, яке обчислює суму
+// Квадратного коріння для всіх чисел у яких квадратний корінь буде цілим числом.
+
+// const arr = [4, 3, 5, 16, 16, 33, 4, 9];
+// function calcSum(array) {
+//   let total = 0;
+//   for (const num of array) {
+//     const a = Math.sqrt(num);
+//     if (Number.isInteger(a)) {
+//       total += a;
+//     }
+//   }
+//   return total;
+// }
+
+// console.log(calcSum(arr));
+
+//TODO:==========================
+//Напишіть код для пошуку пароля в масиві
+//Через includes і тернарний оператор
+
+// const passwords = ["ajax123", "polly456", "mango789", "semiBold"];
+// const password = "semiBold";
+
+// function findPassword(arrayPasswords, password) {
+//   return arrayPasswords.includes(password) ? "autorized" : "invalid password";
+// }
+
+// console.log(findPassword(passwords, password));
+
+/**
+ *? Записати масив, const arr = ['BEST', 'the', 'foo', 'is', 'JS' ]
+ *? розвернути масив,
+ *? вирізати foo,
+ *? перевести його в рядок розділений пробілами
+ *? Очікуваний результат "JS is the BEST"
+ */
+
+/* массив arr не має мутуватися */
+
+// const arr = ["BEST", "the", "foo", "is", "JS"];
+// function arrayToString(array, delString) {
+//   const reversed = array.toReversed();
+//   // if (reversed.includes(delString)) {
+//   //   reversed.splice(reversed.indexOf(delString), 1);
+//   // }
+//   const idx = reversed.indexOf(delString);
+//   if (idx !== -1) {
+//     reversed.splice(idx, 1);
+//   }
+//   return reversed.join(" ");
+// }
+
+// console.log(arrayToString(arr, "foo"));
+
+// arr
+//   .slice(0, arr.indexOf("foo"))
+//   .concat(arr.slice(arr.indexOf("foo") + 1))
+//   .reverse()
+//   .join(" ");
